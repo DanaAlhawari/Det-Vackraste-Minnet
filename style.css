@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+a.nav-link{
+    color: #574e56 !important;
+}
+.active {
+    border-bottom: 2px solid #b8ab9b;
+   
+}
+.nav-link:hover{
+    border-bottom: 2px solid #b8ab9b;
+}
+.fs-6{
+    color: #9d7f84 !important;  
+    padding-left: 4px;
+    
+}
+/*hem sida*/
+.introText{
+    font-size: 5vw;
+    line-height: 1.2;
+    color: #9d7f84;
+
+}
+.introText2{
+    font-size: 2vw;
+    color: #574e56;
+}
+
+.aboutCard{
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 5vw 8vw;
+}
+.aboutCard p {
+    color:#574e56 ;
+    font-size: 1.4vw;
+    line-height: 1.8;
+    margin: 0 0 1vw;
+}
+.aboutCard p span {
+    color: #b8ab9b;
+    font-size: 4vw;
+    letter-spacing: -0.6vw;
+    line-height: 0.8;
+}
+.container-cam {
+    position: relative;
+    text-align: center; 
+  }
+  .container-cam img{
+    width:70%;
+    height:600px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  .centered h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  /*gallery*/
+  .hero{
+      background-image: url(image/camera-gallery.jpg);
+      width: 100%;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+     margin-bottom: 5%;
+  }
+  .gallery-head{
+      line-height: 7.5;
+      margin-bottom: 0;
+      color: #9d7f84;
+     
+  }
+ .gallery img{
+    width:285px;
+     height:300px;
+   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ footer>p{
+     color: #574e56;
+ }
+ /*kontakt*/
+ .container-kontakt{
+    position: relative;
+}
+.container-kontakt img{
+    width: 100%;
+    height: auto;
+}
+.info{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+.fs-3{
+    color:#b8ab9b  ;
+    text-align: center;
+}
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+ /*hem*/
+ @media only screen and (max-width:414px) {
+    .container-cam img{
+       height: 200px;
+       width: 100%;
+   
+    }
+    .centered h1{
+        font-size: 30px;
+    }
+     
+ }
+ /* gallery*/
+ @media only screen and (max-width: 414px){
+     
+    .gallery img{
+        width:100%;
+        
+    }  
+   .row-cols-2>*{
+        width: 100% !important;
+    }
+    .row-cols-3>*{
+        width: 100% !important;
+    }
+   
+ }
+ /*kontakt*/
+ @media only screen and (max-width: 414px){
+     .form-control{
+         line-height: 0.5 !important;
+     }
+     .fs-3{
+         text-align: center;
+     }
+     .info{
+         top: 13%;
+     }
+     .form{
+         width: 70%;
+         top: 62%;
+     }
+ }
